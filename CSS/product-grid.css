@@ -2,7 +2,7 @@
 .product-grid-section {
     padding: 80px 0;
     background-color: #f9f9f9;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 
@@ -18,7 +18,7 @@
     font-weight: 700;
     color: #333;
     position: relative;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 .section-header h2::after {
@@ -28,7 +28,7 @@
     left: 0;
     width: 60px;
     height: 3px;
-    background-color: #d4af37;
+    background-color: #DDCB78;
 }
 
 .navigation-buttons {
@@ -52,9 +52,9 @@
 
 .prev-button:hover,
 .next-button:hover {
-    background-color: #d4af37;
+    background-color: #DDCB78;
     color: white;
-    border-color: #d4af37;
+    border-color: #DDCB78;
 }
 
 .arrow-icon {
@@ -136,14 +136,14 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: #d4af37;
+    background-color: #DDCB78;
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
     font-size: 12px;
     font-weight: 600;
     z-index: 1;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .product-title {
@@ -152,7 +152,7 @@
     font-weight: 600;
     color: #333;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .product-price {
@@ -161,13 +161,13 @@
     justify-content: center;
     gap: 5px;
     margin: 0 15px 15px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 .current-price {
     font-size: 18px;
     font-weight: 700;
-    color: #d4af37;
+    color: #DDCB78;
 }
 
 .price-separator {
@@ -180,6 +180,39 @@
     font-weight: 400;
     color: #999;
     text-decoration: line-through;
+}
+
+.product-discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(90deg, #ff5858 0%, #f09819 100%);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 700;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(255,88,88,0.12);
+    letter-spacing: 0.5px;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.product-stock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color: #4caf50;
+    font-weight: 600;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.product-stock .stock-icon {
+    font-size: 15px;
+    color: #4caf50;
 }
 
 /* Responsive styles */

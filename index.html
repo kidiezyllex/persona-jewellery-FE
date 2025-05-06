@@ -10,8 +10,7 @@
     <!-- AOS CDN Link -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
         rel="stylesheet">
@@ -32,12 +31,18 @@
                 <i class="fas fa-bars"></i>
             </div>
             <ul class="nav-menu">
-                <li><a href="#home">Trang Chủ</a></li>
-                <li><a href="#about">Về Italian Charm</a></li>
-                <li><a href="#products">Sản Phẩm</a></li>
-                <li><a href="#features">Tính Năng</a></li>
-                <li><a href="#contact">Liên Hệ</a></li>
+                <li><a href="#home">TRANG CHỦ</a></li>
+                <li><a href="#about">VỀ CHÚNG TÔI</a></li>
+                <li><a href="#products">SẢN PHẨM</a></li>
+                <li><a href="#features">TÍNH NĂNG</a></li>
+                <li><a href="#contact">LIÊN HỆ</a></li>
             </ul>
+            <div class="cart-icon-wrapper">
+                <a href="#" class="cart-icon-link" aria-label="Giỏ hàng">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </a>
+            </div>
         </div>
     </header>
 
@@ -142,35 +147,47 @@
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Về Italian Charm</h2>
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="800">Về <span style="color: #DDCB78;">Chúng tôi</span></h2>
             <div class="about-content">
-                <div class="about-image" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                    <img src="https://m.media-amazon.com/images/I/71MB903rCaL._AC_UY1000_.jpg"
-                        alt="Italian Charm Bracelet">
+                <div class="about-image" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" style="display: flex; flex-direction: column; align-items: center; gap: 24px;">
+                    <!-- Ảnh sản phẩm -->
+                    <img src="https://m.media-amazon.com/images/I/71MB903rCaL._AC_UY1000_.jpg" alt="Italian Charm Bracelet">
                 </div>
                 <div class="about-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
-                    <h3 class="about-title">Câu Chuyện Về Phong Cách</h3>
+                    <h3 class="about-title">Mỗi mắt xích, một câu chuyện</h3>
                     <p class="about-description">
-                        Vòng tay Italian Charm ra đời tại Italy vào những năm 1990 và nhanh chóng trở thành xu hướng
-                        thời trang toàn cầu. Điểm đặc biệt của vòng tay này nằm ở thiết kế module độc đáo, cho phép bạn
-                        thay đổi, tùy biến các mắt xích (charm) để tạo nên chiếc vòng tay thể hiện cá tính riêng.
+                        Tại Persona Jewellery, chúng tôi tin rằng mỗi chiếc vòng tay là một hành trình kể về cá tính và dấu ấn riêng của từng người. Thiết kế module độc đáo cho phép bạn tự do kết hợp, thay đổi từng charm để tạo nên chiếc vòng tay mang đậm dấu ấn cá nhân.
                     </p>
                     <p class="about-description">
-                        Mỗi charm trên vòng tay đều mang ý nghĩa riêng, từ biểu tượng may mắn, kỷ niệm cho đến những dấu
-                        ấn cá nhân. Vòng tay Italian Charm không chỉ là món trang sức mà còn là câu chuyện, là hành
-                        trình của mỗi người đeo nó.
+                        Chúng tôi lựa chọn <strong>thép không gỉ 316L</strong> cao cấp – bền bỉ, sáng bóng và an toàn cho da. Mỗi sản phẩm đều được chế tác tỉ mỉ, đảm bảo chất lượng vượt trội và giữ được vẻ đẹp lâu dài theo thời gian.
                     </p>
                     <p class="about-description">
-                        Tại Persona Jewellery, chúng tôi cung cấp các vòng tay Italian Charm chất lượng cao từ thép
-                        không gỉ 316L, bền đẹp và an toàn cho da. Đa dạng các mẫu charm từ đơn giản đến phức tạp, từ cổ
-                        điển đến hiện đại, giúp bạn dễ dàng tìm được phong cách phù hợp.
+                        Mỗi chiếc vòng là thành quả của sự kết hợp giữa <strong>thủ công tinh xảo</strong> và công nghệ hiện đại, mang đến trải nghiệm <strong>cá nhân hóa tối đa</strong> cho khách hàng. Persona Jewellery cam kết đồng hành cùng bạn trong việc tạo nên những món quà ý nghĩa, lưu giữ kỷ niệm và thể hiện phong cách riêng biệt.
                     </p>
+                     <!-- Logo thương hiệu -->
+                     <a href="#" class="logo" style="font-size: 2rem; color: #070322; font-family: 'Cinzel', serif; font-weight: 700; margin-bottom: 12px;">
+                        <span style="color: #DDCB78;">Persona Jewellery</span>
+                    </a>
+                  
                 </div>
+            </div>
+            <div class="founder-section" style="margin-top: 32px; background: #f9f6f1; border-left: 4px solid #DDCB78; padding: 22px 28px; border-radius: 4px; position: relative; padding-right: 140px; min-height: 120px;">
+                <div style="position: absolute; top: 22px; right: 28px; display: flex; flex-direction: column; align-items: center; z-index: 2; width: 100px;">
+                    <img 
+                    draggable="false"
+                    src="https://italiancharms.fr/cdn/shop/files/IMG_1948.heic?v=1739546006&width=600" alt="Người sáng lập Persona Jewellery" style="width: 90px; height: 90px; object-fit: cover; border-radius: 8px; border: 2px solid #DDCB78; box-shadow: 0 2px 8px rgba(221,203,120,0.08); margin-bottom: 6px; background: #fff;">
+                </div>
+                <h4 style="color: #070322; font-size: 1.15rem; font-weight: 700; margin-bottom: 10px;">Chia sẻ từ người sáng lập <span style="color: #DDCB78;">Ari Lan</span></h4>
+                <p style="color: #7a5836; font-size: 1rem; line-height: 1.7; margin-bottom: 0;">
+                    "Tôi là <strong>Ari Lan</strong>, người luôn say mê với ý nghĩa mà trang sức mang lại. Đối với tôi, trang sức không chỉ là phụ kiện, mà còn là nhân chứng lặng lẽ cho những niềm vui, ước mơ và các mối liên kết trong cuộc sống.<br><br>
+                    Chính niềm đam mê này đã thôi thúc tôi sáng lập Persona Jewellery: một thương hiệu giúp mỗi người có thể tự tạo nên món trang sức mang dấu ấn riêng, đồng hành cùng bạn và kể câu chuyện của chính bạn.<br><br>
+                    Thông qua hành trình này, tôi mong muốn mang đến cho bạn không chỉ là trang sức, mà còn là những kỷ niệm có thể đeo bên mình, cảm xúc để sẻ chia và một cách đặc biệt để thể hiện chính con người bạn."
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
+      <!-- Features Section -->
     <section class="features" id="features">
         <div class="container">
             <h2 class="section-title">Tính Năng Nổi Bật</h2>
@@ -237,7 +254,7 @@
     <!-- Products Section -->
     <section class="products" id="products">
         <div class="container">
-            <h2 class="section-title">Bộ Sưu Tập Italian Charm</h2>
+            <h2 class="section-title">Bộ Sưu Tập <span style="color: #DDCB78;"">Italian Charm</span></h2>
             <!-- Product Carousel Section -->
             <div class="container container--lg">
                 <div class="section-stack">
@@ -485,7 +502,7 @@
      <section class="product-grid-section">
         <div class="container">
             <div class="section-header" data-aos="fade-up">
-                <h2>SẢN PHẨM NỔI BẬT</h2>
+                <h2>SẢN PHẨM <span style="color: #DDCB78;">NỔI BẬT</span></h2>
                 <div class="navigation-buttons">
                     <button class="prev-button" aria-label="Previous slide">
                         <i class="fas fa-chevron-left"></i>
@@ -498,251 +515,61 @@
             
             <div class="product-slider" data-aos="fade-up" data-aos-delay="100">
                 <div class="products-container">
-                    <!-- Product 1 -->
-                    <div class="product-card">
-                        <a href="/products/bracelet-bundle-2-pack" class="product-link">
-                            <div class="product-image-wrapper">
-                                <div class="product-image primary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/4_67b053c5-eb6a-4dba-9c88-fd034a9f2958.png?v=1742363628" alt="Bracelet Bundle 2 Pack">
-                                </div>
-                                <div class="product-image secondary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/12.png?v=1742364912" alt="Bracelet Bundle 2 Pack">
-                                </div>
-                                <div class="product-badge">PICK 10 CHARMS FREE</div>
-                            </div>
-                            <h3 class="product-title">BRACELET (2 PACK)</h3>
-                            <div class="product-price">
-                                <span class="current-price">1.578.000₫</span>
-                                <span class="price-separator">-</span>
-                                <span class="original-price">3.155.000₫</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Product 2 -->
-                    <div class="product-card">
-                        <a href="/products/bracelet-bundle-3-pack" class="product-link">
-                            <div class="product-image-wrapper">
-                                <div class="product-image primary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/12.png?v=1742364912" alt="Bracelet Bundle 3 Pack">
-                                </div>
-                                <div class="product-image secondary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/20.png?v=1742366614" alt="Bracelet Bundle 3 Pack">
-                                </div>
-                                <div class="product-badge">PICK 20 CHARMS FREE</div>
-                            </div>
-                            <h3 class="product-title">BRACELET (3 PACK)</h3>
-                            <div class="product-price">
-                                <span class="current-price">2.366.000₫</span>
-                                <span class="price-separator">-</span>
-                                <span class="original-price">5.258.000₫</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Product 3 -->
-                    <div class="product-card">
-                        <a href="/products/bracelet-bundle-1" class="product-link">
-                            <div class="product-image-wrapper">
-                                <div class="product-image primary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/20.png?v=1742366614" alt="Bracelet Bundle 5 Pack">
-                                </div>
-                                <div class="product-image secondary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/10_7.png?v=1742018725" alt="Bracelet Bundle 5 Pack">
-                                </div>
-                                <div class="product-badge">PICK 30 CHARMS FREE</div>
-                            </div>
-                            <h3 class="product-title">BRACELET (5 PACK)</h3>
-                            <div class="product-price">
-                                <span class="current-price">3.944.000₫</span>
-                                <span class="price-separator">-</span>
-                                <span class="original-price">7.887.000₫</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Product 4 -->
-                    <div class="product-card">
-                        <a href="/products/girls-night-bundle-silver" class="product-link">
-                            <div class="product-image-wrapper">
-                                <div class="product-image primary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/10_10.png?v=1742081092" alt="Girls Night Bundle Silver">
-                                </div>
-                                <div class="product-badge">SAVE 50%</div>
-                            </div>
-                            <h3 class="product-title">GIRLS NIGHT BUNDLE</h3>
-                            <div class="product-price">
-                                <span class="current-price">3.944.000₫</span>
-                                <span class="price-separator">-</span>
-                                <span class="original-price">7.887.000₫</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Product 5 -->
-                    <div class="product-card">
-                        <a href="/products/girls-night-bundle-gold" class="product-link">
-                            <div class="product-image-wrapper">
-                                <div class="product-image primary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/10_11.png?v=1742082187" alt="Girls Night Bundle Gold">
-                                </div>
-                                <div class="product-badge">SAVE 50%</div>
-                            </div>
-                            <h3 class="product-title">GIRLS NIGHT BUNDLE</h3>
-                            <div class="product-price">
-                                <span class="current-price">3.944.000₫</span>
-                                <span class="price-separator">-</span>
-                                <span class="original-price">7.887.000₫</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Product 6 -->
-                    <div class="product-card">
-                        <a href="/products/besties-bundle-silver" class="product-link">
-                            <div class="product-image-wrapper">
-                                <div class="product-image primary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/10_12.png?v=1742082213" alt="Besties Bundle Silver">
-                                </div>
-                                <div class="product-badge">SAVE 50%</div>
-                            </div>
-                            <h3 class="product-title">BESTIES BUNDLE</h3>
-                            <div class="product-price">
-                                <span class="current-price">2.629.000₫</span>
-                                <span class="price-separator">-</span>
-                                <span class="original-price">5.258.000₫</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Product 7 -->
-                    <div class="product-card">
-                        <a href="/products/bestie-bundle-gold" class="product-link">
-                            <div class="product-image-wrapper">
-                                <div class="product-image primary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/4_67b053c5-eb6a-4dba-9c88-fd034a9f2958.png?v=1742363628" alt="Besties Bundle Gold">
-                                </div>
-                                <div class="product-badge">SAVE 50%</div>
-                            </div>
-                            <h3 class="product-title">BESTIES BUNDLE</h3>
-                            <div class="product-price">
-                                <span class="current-price">2.629.000₫</span>
-                                <span class="price-separator">-</span>
-                                <span class="original-price">5.258.000₫</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Product 8 -->
-                    <div class="product-card">
-                        <a href="/products/date-night-bundle-silver" class="product-link">
-                            <div class="product-image-wrapper">
-                                <div class="product-image primary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/12.png?v=1742364912" alt="Date Night Bundle Silver">
-                                </div>
-                                <div class="product-badge">SAVE 50%</div>
-                            </div>
-                            <h3 class="product-title">DATE NIGHT BUNDLE</h3>
-                            <div class="product-price">
-                                <span class="current-price">2.629.000₫</span>
-                                <span class="price-separator">-</span>
-                                <span class="original-price">5.258.000₫</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Product 9 -->
-                    <div class="product-card">
-                        <a href="/products/date-night-bundle-gold" class="product-link">
-                            <div class="product-image-wrapper">
-                                <div class="product-image primary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/20.png?v=1742366614" alt="Date Night Bundle Gold">
-                                </div>
-                                <div class="product-badge">SAVE 50%</div>
-                            </div>
-                            <h3 class="product-title">DATE NIGHT BUNDLE</h3>
-                            <div class="product-price">
-                                <span class="current-price">2.629.000₫</span>
-                                <span class="price-separator">-</span>
-                                <span class="original-price">5.258.000₫</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Product 10 -->
-                    <div class="product-card">
-                        <a href="/products/premium-bracelet-set" class="product-link">
-                            <div class="product-image-wrapper">
-                                <div class="product-image primary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/10_7.png?v=1742018725" alt="Premium Bracelet Set">
-                                </div>
-                                <div class="product-image secondary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/10_10.png?v=1742081092" alt="Premium Bracelet Set">
-                                </div>
-                                <div class="product-badge">PICK 15 CHARMS FREE</div>
-                            </div>
-                            <h3 class="product-title">PREMIUM BRACELET SET</h3>
-                            <div class="product-price">
-                                <span class="current-price">2.998.000₫</span>
-                                <span class="price-separator">-</span>
-                                <span class="original-price">4.577.000₫</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Product 11 -->
-                    <div class="product-card">
-                        <a href="/products/luxury-charm-collection" class="product-link">
-                            <div class="product-image-wrapper">
-                                <div class="product-image primary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/10_11.png?v=1742082187" alt="Luxury Charm Collection">
-                                </div>
-                                <div class="product-image secondary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/10_12.png?v=1742082213" alt="Luxury Charm Collection">
-                                </div>
-                                <div class="product-badge">LIMITED EDITION</div>
-                            </div>
-                            <h3 class="product-title">LUXURY CHARM COLLECTION</h3>
-                            <div class="product-price">
-                                <span class="current-price">3.155.000₫</span>
-                                <span class="price-separator">-</span>
-                                <span class="original-price">5.987.000₫</span>
-                            </div>
-                        </a>
-                    </div>
-
-                    <!-- Product 12 -->
-                    <div class="product-card">
-                        <a href="/products/exclusive-bracelet-bundle" class="product-link">
-                            <div class="product-image-wrapper">
-                                <div class="product-image primary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/4_67b053c5-eb6a-4dba-9c88-fd034a9f2958.png?v=1742363628" alt="Exclusive Bracelet Bundle">
-                                </div>
-                                <div class="product-image secondary-image">
-                                    <img src="https://myitaliancharms.com/cdn/shop/files/12.png?v=1742364912" alt="Exclusive Bracelet Bundle">
-                                </div>
-                                <div class="product-badge">BEST SELLER</div>
-                            </div>
-                            <h3 class="product-title">EXCLUSIVE BRACELET BUNDLE</h3>
-                            <div class="product-price">
-                                <span class="current-price">2.839.000₫</span>
-                                <span class="price-separator">-</span>
-                                <span class="original-price">4.788.000₫</span>
-                            </div>
-                        </a>
-                    </div>
+                    <!-- Sẽ render động bằng JS -->
                 </div>
             </div>
         </div>
     </section>
         </div>
     </section>
-   
+     <!-- Cam kết thương hiệu (Why Choose Our Products) -->
+     <section class="brand-commitments">
+        <div class="container">
+            <h2 class="section-title">CAM KẾT <span style="color: #DDCB78;">THƯƠNG HIỆU</span></h2>
+            <div class="brand-commitments-list">
+                <div class="commitment-item">
+                    <div class="commitment-icon" style="background: #F9F6F1; color: #070322;">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3 class="commitment-title">Ship Siêu Tốc</h3>
+                    <p class="commitment-desc">Hàng Order được giao trong 7 - 10 ngày</p>
+                </div>
+                <div class="commitment-item">
+                    <div class="commitment-icon" style="background: #F9F6F1; color: #070322;">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="commitment-title">Hỗ Trợ 24/7</h3>
+                    <p class="commitment-desc">Hỗ trợ khách 24/7 tại Instagram của chúng tôi</p>
+                </div>
+                <div class="commitment-item">
+                    <div class="commitment-icon" style="background: #F9F6F1; color: #070322;">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="commitment-title">Đổi Trả Hàng 1|1</h3>
+                    <p class="commitment-desc">Trong 7 ngày nếu sản phẩm lỗi, không đúng như mô tả</p>
+                </div>
+                <div class="commitment-item">
+                    <div class="commitment-icon" style="background: #F9F6F1; color: #070322;">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="commitment-title">Đa Dạng Mẫu Mã</h3>
+                    <p class="commitment-desc">Cam kết đa dạng mẫu mã nhất thị trường Việt Nam</p>
+                </div>
+                <div class="commitment-item">
+                    <div class="commitment-icon" style="background: #F9F6F1; color: #070322;">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="commitment-title">Chất Lượng Cao</h3>
+                    <p class="commitment-desc">Nguồn cung cấp Charm riêng tạo nên sự khác biệt</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Testimonials Section -->
     <section class="testimonials">
         <div class="container">
-            <h2 class="section-title">Khách Hàng Nói Gì Về Chúng Tôi</h2>
+            <h2 class="section-title">Khách hàng nói gì về <span style="color: #DDCB78;">Personal Jewellery</span></h2>
             <div class="testimonial-grid">
                 <div class="testimonial-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <p class="testimonial-text">
@@ -754,7 +581,7 @@
                             <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Nguyễn Văn A">
                         </div>
                         <div class="author-info">
-                            <h4>Nguyễn Văn A</h4>
+                            <h4>Trịnh Trần Phương Tuấn</h4>
                             <p>Hà Nội</p>
                         </div>
                     </div>
@@ -769,7 +596,7 @@
                             <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Trần Thị B">
                         </div>
                         <div class="author-info">
-                            <h4>Trần Thị B</h4>
+                            <h4>Nguyễn Thúc Thuỳ Tiên</h4>
                             <p>TP. Hồ Chí Minh</p>
                         </div>
                     </div>
@@ -784,7 +611,7 @@
                             <img src="https://randomuser.me/api/portraits/women/66.jpg" alt="Lê Thị C">
                         </div>
                         <div class="author-info">
-                            <h4>Lê Thị C</h4>
+                            <h4>Nguyễn Cao Kỳ Duyên</h4>
                             <p>Đà Nẵng</p>
                         </div>
                     </div>
@@ -798,7 +625,7 @@
         <div class="container">
             <div class="contact-content">
                 <div class="contact-form" data-aos="fade-right" data-aos-duration="1000">
-                    <h3 class="form-title">Liên Hệ Với Chúng Tôi</h3>
+                    <h3 class="form-title">Liên hệ với chúng tôi</h3>
                     <form id="contact-form">
                         <div class="form-group">
                             <label for="name">Họ và tên</label>
@@ -816,11 +643,11 @@
                             <label for="message">Tin nhắn</label>
                             <textarea id="message" class="form-control" required></textarea>
                         </div>
-                        <button type="submit" class="btn form-btn">Gửi Tin Nhắn</button>
+                        <button type="submit" class="btn form-btn">Gửi tin nhắn</button>
                     </form>
                 </div>
                 <div class="contact-info" data-aos="fade-left" data-aos-duration="1000">
-                    <h3 class="contact-info-title">Thông Tin Liên Hệ</h3>
+                    <h3 class="contact-info-title">Thông tin liên hệ</h3>
                     <p class="contact-info-text">
                         Chúng tôi luôn sẵn sàng hỗ trợ bạn 24/7. Hãy liên hệ với chúng tôi qua các kênh dưới đây.
                     </p>
@@ -829,19 +656,20 @@
                             <div class="contact-icon">
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
-                            <p>Số 123, Đường ABC, Quận XYZ, TP. Hồ Chí Minh</p>
+                            <p>233 Phan Trung, P.Tân Mai, Biên Hòa – Đồng Nai</p>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-phone-alt"></i>
                             </div>
-                            <p>0901 234 567</p>
+                            <p>039 2477 865</p>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-envelope"></i>
                             </div>
-                            <p>personnajewellery@gmail.com</p>
+                            <p>personnajewellery@gmail.com
+                            </p>
                         </div>
                         <div class="contact-item">
                             <div class="contact-icon">
@@ -851,17 +679,14 @@
                         </div>
                     </div>
                     <div class="social-media">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.facebook.com/people/Persona-Jewellery/61565917419919/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/persona.jewelleryy/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://personajewellery.godaddysites.com/trang-ch%E1%BB%A7" target="_blank" class="social-icon"><i class="fas fa-globe"></i></a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-   
 
     <!-- Footer -->
     <footer class="footer">
@@ -873,35 +698,54 @@
                         Chúng tôi là nhà cung cấp vòng tay Italian Charm hàng đầu Việt Nam với sứ mệnh mang đến những
                         sản phẩm chất lượng cao, thiết kế độc đáo và dịch vụ tận tâm.
                     </p>
+                    <ul class="footer-contact-list" style="margin-top: 18px;">
+                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <i class="fas fa-map-marker-alt" style="margin-right: 8px; color: #DDCB78;"></i>
+                            233 Phan Trung, P.Tân Mai, Biên Hòa – Đồng Nai
+                        </li>
+                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <i class="fas fa-phone-alt" style="margin-right: 4px; color: #DDCB78;"></i>
+                            039 2477 865
+                        </li>
+                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <i class="fas fa-envelope" style="margin-right: 4px; color: #DDCB78;"></i>
+                            personnajewellery@gmail.com
+                        </li>
+                    </ul>
+                    <div class="footer-social" style="margin-top: 16px; display: flex; gap: 12px;">
+                        <a href="https://www.facebook.com/people/Persona-Jewellery/61565917419919/" target="_blank" class="social-icon" style="background: #3b5998;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/persona.jewelleryy/" target="_blank" class="social-icon" style="background: #e4405f;"><i class="fab fa-instagram"></i></a>
+                        <a href="https://personajewellery.godaddysites.com/trang-ch%E1%BB%A7" target="_blank" class="social-icon" style="background: #DDCB78;"><i class="fas fa-globe"></i></a>
+                    </div>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-title">Liên Kết Nhanh</h4>
+                    <h4 class="footer-title">LIÊN KẾT NHANH</h4>
                     <ul class="footer-links">
-                        <li><a href="#home">Trang Chủ</a></li>
-                        <li><a href="#about">Về Italian Charm</a></li>
-                        <li><a href="#products">Sản Phẩm</a></li>
-                        <li><a href="#features">Tính Năng</a></li>
-                        <li><a href="#contact">Liên Hệ</a></li>
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#products">Sản phẩm</a></li>
+                        <li><a href="#features">Tính năng</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-title">Hỗ Trợ</h4>
+                    <h4 class="footer-title">HỖ TRỢ</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Chính Sách Bảo Hành</a></li>
-                        <li><a href="#">Chính Sách Đổi Trả</a></li>
-                        <li><a href="#">Chính Sách Vận Chuyển</a></li>
-                        <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Chính sách bảo hành</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Chính sách vận chuyển</a></li>
+                        <li><a href="#">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#">Câu hỏi thường gặp</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 class="footer-title">Đăng Ký Nhận Tin</h4>
+                    <h4 class="footer-title">ĐĂNG KÝ NHẬN TIN</h4>
                     <p class="footer-newsletter">
                         Đăng ký để nhận thông tin mới nhất về sản phẩm và khuyến mãi đặc biệt.
                     </p>
                     <div class="newsletter-form">
                         <input type="email" class="newsletter-input" placeholder="Email của bạn">
-                        <button type="submit" class="newsletter-btn">Đăng Ký</button>
+                        <button type="submit" class="newsletter-btn">Đăng ký</button>
                     </div>
                 </div>
             </div>
@@ -927,7 +771,7 @@
     <script src="./JS/ui.js"></script>
     <script src="./JS/slider.js"></script>
     <script src="./JS/product-gallery.js"></script>
-    <script src="./JS/product-grid.js"></script>
+    <script type="module" src="./JS/product-grid.js"></script>
 
     <!-- Scroll To Top Button -->
     <button id="scrollToTopBtn" title="Lên đầu trang" style="display: flex; align-items: center; justify-content: center">

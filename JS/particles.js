@@ -710,7 +710,6 @@ var pJS = function (tag_id, params) {
           opacity_line +
           ")";
         pJS.canvas.ctx.lineWidth = pJS.particles.line_linked.width;
-        //pJS.canvas.ctx.lineCap = 'round'; /* performance issue */
 
         /* path */
         pJS.canvas.ctx.beginPath();

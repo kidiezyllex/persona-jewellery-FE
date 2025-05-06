@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Baloo+Bhaijaan+2:wght@400;500;600&family=Comfortaa:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Dongle:wght@300;400;700&family=Francois+One&family=Fredoka+One&family=Noto+Sans:ital,wght@1,700&family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap');
 
 * {
     padding: 0;
@@ -9,7 +10,7 @@
     outline: none;
     border: none;
     transition: all 0.2s linear;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 :root {
@@ -220,6 +221,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 4rem;
     color: #fff;
     font-family: 'Paytone One', sans-serif;
+    font-weight: 400;
 }
 
 .header-logo i {

@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Khởi tạo AOS (Animate on Scroll)
     initAOS();
+
+    // Cập nhật số lượng sản phẩm giỏ hàng lên badge
+    updateCartBadge();
 });
 
 /**
@@ -164,4 +167,15 @@ function initAOS() {
             mirror: false
         });
     }
+}
+
+function updateCartBadge() {
+    const cartCountEl = document.getElementById('cart-count');
+    let cart = [];
+    try {
+        cart = JSON.parse(localStorage.getItem('cart')) || [];
+    } catch (e) {
+        cart = [];
+    }
+    cartCountEl.textContent = cart.length;
 } 
