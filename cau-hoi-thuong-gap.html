@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu hỏi thường gặp - Persona Jewellery</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/landing-page.css">
+    <style>
+        .faq-section {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .faq-header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .faq-title {
+            font-size: 2.5rem;
+            color: #070322;
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+            position: relative;
+            display: inline-block;
+        }
+
+        .faq-title::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: #DDCB78;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .faq-description {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .faq-content {
+            background-color: #f9f6f1;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .faq-category {
+            margin-bottom: 30px;
+        }
+
+        .faq-category-title {
+            font-size: 1.8rem;
+            color: #070322;
+            margin-bottom: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .faq-category-title i {
+            color: #DDCB78;
+            margin-right: 15px;
+            font-size: 1.6rem;
+        }
+
+        .faq-item {
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 15px 20px;
+            background-color: #fff;
+            color: #070322;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+            border-left: 3px solid #DDCB78;
+        }
+
+        .faq-question:hover {
+            background-color: #f0f0f0;
+        }
+
+        .faq-question i {
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .faq-answer {
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            background-color: #fff;
+        }
+
+        .faq-answer-content {
+            padding: 0 20px 20px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-question {
+            background-color: #f5f0e5;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
+        @media (max-width: 768px) {
+            .faq-section {
+                padding: 60px 0;
+            }
+
+            .faq-title {
+                font-size: 2rem;
+            }
+
+            .faq-content {
+                padding: 30px 20px;
+            }
+
+            .faq-category-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span>Persona Jewellery</span>
+            </a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">TRANG CHỦ</a></li>
+                <li><a href="#about">VỀ CHÚNG TÔI</a></li>
+                <li><a href="#products">SẢN PHẨM</a></li>
+                <li><a href="#features">TÍNH NĂNG</a></li>
+                <li><a href="#contact">LIÊN HỆ</a></li>
+            </ul>
+            <div class="cart-icon-wrapper">
+                <a href="#" class="cart-icon-link" aria-label="Giỏ hàng">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <div class="faq-header">
+                <h1 class="faq-title">Câu hỏi thường gặp</h1>
+                <p class="faq-description">Dưới đây là những câu hỏi thường gặp về sản phẩm và dịch vụ của Persona
+                    Jewellery. Nếu bạn không tìm thấy câu trả lời cho thắc mắc của mình, vui lòng liên hệ với chúng tôi.
+                </p>
+            </div>
+
+            <div class="faq-content">
+                <div class="faq-category">
+                    <h2 class="faq-category-title">
+                        <i class="fas fa-info-circle"></i>
+                        Thông tin sản phẩm
+                    </h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Vòng tay Italian Charm là gì?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Italian Charm là loại vòng tay module với các mắt xích (charm) có thể tháo lắp, thay
+                                đổi, kết hợp linh hoạt. Các charm được làm từ thép không gỉ 316L cao cấp, có nhiều thiết
+                                kế khác nhau cho phép bạn tạo nên vòng tay mang đậm dấu ấn cá nhân.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Vòng tay Italian Charm có bao nhiêu mắt xích?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Một vòng tay Italian Charm tiêu chuẩn thường có 18 mắt xích. Tuy nhiên, bạn có thể điều
+                                chỉnh số lượng mắt xích để phù hợp với kích thước cổ tay của mình.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h2 class="faq-category-title">
+                        <i class="fas fa-shopping-cart"></i>
+                        Mua hàng
+                    </h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Làm thế nào để đặt hàng online?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Bạn có thể đặt hàng trực tuyến thông qua website của chúng tôi. Chọn sản phẩm, thêm vào
+                                giỏ hàng, điền thông tin giao hàng và thanh toán. Để biết chi tiết, vui lòng tham khảo
+                                mục "Hướng dẫn mua hàng".
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Persona Jewellery có ship hàng toàn quốc không?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Có, chúng tôi giao hàng đến tất cả các tỉnh thành trên toàn quốc với phí vận chuyển và
+                                thời gian giao hàng khác nhau tùy theo khu vực. Chi tiết có trong "Chính sách vận
+                                chuyển".
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h2 class="faq-category-title">
+                        <i class="fas fa-user-shield"></i>
+                        Bảo hành & Bảo dưỡng
+                    </h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Vòng tay Italian Charm có được bảo hành không?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Tất cả sản phẩm vòng tay Italian Charm được bảo hành 12 tháng đối với các lỗi sản xuất
+                                như lỗi về màu sắc, khóa cài, chất liệu. Chi tiết tham khảo "Chính sách bảo hành".
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Làm thế nào để bảo quản vòng tay Italian Charm?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Tránh tiếp xúc với hóa chất, nước có clo, nước biển. Vệ sinh nhẹ nhàng bằng khăn mềm.
+                                Bảo quản trong hộp đựng riêng khi không đeo. Tránh va đập mạnh hoặc làm rơi sản phẩm.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-category">
+                    <h2 class="faq-category-title">
+                        <i class="fas fa-exchange-alt"></i>
+                        Đổi trả & Hoàn tiền
+                    </h2>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Tôi có thể đổi trả sản phẩm không?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Bạn có thể đổi trả sản phẩm trong vòng 7 ngày nếu không hài lòng, 14 ngày nếu sản phẩm
+                                không đúng mô tả hoặc không vừa kích thước, và 30 ngày nếu phát hiện lỗi từ nhà sản
+                                xuất. Chi tiết tham khảo "Chính sách đổi trả".
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Tôi được hoàn tiền như thế nào khi trả hàng?
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Chúng tôi sẽ hoàn tiền theo phương thức bạn đã thanh toán ban đầu. Thời gian hoàn tiền
+                                từ 3-14 ngày làm việc tùy theo phương thức thanh toán.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <a href="#" class="footer-logo">Persona Jewellery</a>
+            <p class="footer-about" style="margin-bottom: 24px; font-size: 18px;">
+                Chúng tôi là nhà cung cấp vòng tay Italian Charm hàng đầu Việt Nam với sứ mệnh mang đến những
+                sản phẩm chất lượng cao, thiết kế độc đáo và dịch vụ tận tâm.
+            </p>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4 class="footer-title">LIÊN HỆ</h4>
+                    <ul class="footer-contact-list">
+                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <i class="fas fa-map-marker-alt" style="margin-right: 8px; color: #DDCB78;"></i>
+                            233 Phan Trung, P.Tân Mai, Biên Hòa – Đồng Nai
+                        </li>
+                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <i class="fas fa-phone-alt" style="margin-right: 4px; color: #DDCB78;"></i>
+                            039 2477 865
+                        </li>
+                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <i class="fas fa-envelope" style="margin-right: 4px; color: #DDCB78;"></i>
+                            personnajewellery@gmail.com
+                        </li>
+                    </ul>
+                    <div class="footer-social" style="display: flex; gap: 12px;">
+                        <a href="https://www.facebook.com/people/Persona-Jewellery/61565917419919/" target="_blank"
+                            class="social-icon" style="background: #3b5998;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/persona.jewelleryy/" target="_blank" class="social-icon"
+                            style="background: #e4405f;"><i class="fab fa-instagram"></i></a>
+                        <a href="https://personajewellery.godaddysites.com/trang-ch%E1%BB%A7" target="_blank"
+                            class="social-icon" style="background: #DDCB78;"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">LIÊN KẾT NHANH</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#products">Sản phẩm</a></li>
+                        <li><a href="#features">Tính năng</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">HỖ TRỢ</h4>
+                    <ul class="footer-links">
+                        <li><a href="chinh-sach-bao-hanh.html" target="_blank">Chính sách bảo hành</a></li>
+                        <li><a href="chinh-sach-doi-tra.html" target="_blank">Chính sách đổi trả</a></li>
+                        <li><a href="chinh-sach-van-chuyen.html" target="_blank">Chính sách vận chuyển</a></li>
+                        <li><a href="huong-dan-mua-hang.html" target="_blank">Hướng dẫn mua hàng</a></li>
+                        <li><a href="cau-hoi-thuong-gap.html" target="_blank">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">ĐĂNG KÝ NHẬN TIN</h4>
+                    <p class="footer-newsletter">
+                        Đăng ký để nhận thông tin mới nhất về sản phẩm và khuyến mãi đặc biệt.
+                    </p>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Email của bạn">
+                        <button type="submit" class="newsletter-btn">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2023 Persona Jewellery. All Rights Reserved.
+                </p>
+                <div class="payment-methods">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1200px-Visa_Inc._logo.svg.png"
+                        alt="Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1200px-Mastercard-logo.svg.png"
+                        alt="Mastercard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1200px-PayPal.svg.png"
+                        alt="PayPal">
+                    <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/10/Logo-MoMo-Square.png" alt="MoMo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./JS/ui.js"></script>
+    <script src="./JS/common.js"></script>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollToTopBtn" title="Lên đầu trang"
+        style="display: none; align-items: center; justify-content: center">
+        <i class="fas fa-chevron-up" style="font-size: 16px;"></i>
+    </button>
+
+    <!-- Script Scroll To Top Button -->
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("scrollToTopBtn").style.display = "flex";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+        document.getElementById("scrollToTopBtn").addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+    <!-- Script for FAQ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+
+    <style>
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #916841;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            width: 50px;
+            height: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #7a5836;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            #scrollToTopBtn {
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</body>
+
+</html>

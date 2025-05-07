@@ -16,7 +16,7 @@ export const featuredProducts = [
     material: "Thép không gỉ 316L",
     dimensions: "1.8cm x 0.9cm",
     weight: "2g/charm",
-    categories: ["gia đình", "tình yêu"]
+    categories: ["gia đình"]
   },
   {
     id: 2,

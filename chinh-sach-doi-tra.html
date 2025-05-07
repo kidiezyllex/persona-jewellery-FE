@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chính sách đổi trả - Persona Jewellery</title>
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- AOS CDN Link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/landing-page.css">
+    <style>
+        /* Styles cho trang chính sách */
+        .policy-section {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+
+        .policy-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .policy-header {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .policy-title {
+            font-size: 2.5rem;
+            color: #070322;
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+            position: relative;
+            display: inline-block;
+        }
+
+        .policy-title::after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: #DDCB78;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .policy-description {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .policy-content {
+            background-color: #f9f6f1;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .policy-section-title {
+            font-size: 1.8rem;
+            color: #070322;
+            margin-bottom: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+
+        .policy-section-title i {
+            color: #DDCB78;
+            margin-right: 15px;
+            font-size: 1.6rem;
+        }
+
+        .policy-text {
+            margin-bottom: 30px;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .policy-text p {
+            margin-bottom: 15px;
+        }
+
+        .policy-list {
+            margin-bottom: 25px;
+            padding-left: 20px;
+        }
+
+        .policy-list li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .policy-list li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #DDCB78;
+        }
+
+        .policy-note {
+            background-color: #fff;
+            border-left: 4px solid #DDCB78;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        .policy-note p {
+            margin-bottom: 0;
+            font-style: italic;
+            color: #555;
+        }
+
+        .policy-steps {
+            counter-reset: step-counter;
+            margin-bottom: 30px;
+        }
+
+        .policy-step {
+            position: relative;
+            padding: 20px 25px 20px 80px;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .policy-step::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: #DDCB78;
+            color: #070322;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .policy-step h3 {
+            margin-bottom: 10px;
+            color: #070322;
+            font-size: 1.2rem;
+        }
+
+        .policy-step p {
+            margin-bottom: 0;
+            color: #555;
+        }
+
+        .policy-contact {
+            background-color: #070322;
+            color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .policy-contact h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #DDCB78;
+        }
+
+        .policy-contact p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #DDCB78;
+            color: #070322;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #fff;
+            transform: translateY(-3px);
+        }
+
+        .policy-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .policy-table th,
+        .policy-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #f0e9df;
+        }
+
+        .policy-table th {
+            background-color: #DDCB78;
+            color: #070322;
+            font-weight: 600;
+        }
+
+        .policy-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .policy-table tr:hover {
+            background-color: #f9f6f1;
+        }
+
+        @media (max-width: 768px) {
+            .policy-section {
+                padding: 60px 0;
+            }
+
+            .policy-title {
+                font-size: 2rem;
+            }
+
+            .policy-content {
+                padding: 30px 20px;
+            }
+
+            .policy-section-title {
+                font-size: 1.5rem;
+            }
+
+            .policy-table th,
+            .policy-table td {
+                padding: 10px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <span>Persona Jewellery</span>
+            </a>
+            <div class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">TRANG CHỦ</a></li>
+                <li><a href="#about">VỀ CHÚNG TÔI</a></li>
+                <li><a href="#products">SẢN PHẨM</a></li>
+                <li><a href="#features">TÍNH NĂNG</a></li>
+                <li><a href="#contact">LIÊN HỆ</a></li>
+            </ul>
+            <div class="cart-icon-wrapper">
+                <a href="#" class="cart-icon-link" aria-label="Giỏ hàng">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Policy Section -->
+    <section class="policy-section">
+        <div class="policy-container">
+            <div class="policy-header">
+                <h1 class="policy-title">Chính sách đổi trả</h1>
+                <p class="policy-description">Persona Jewellery cam kết đảm bảo sự hài lòng của khách hàng với mọi sản
+                    phẩm. Chính sách đổi trả của chúng tôi được thiết kế để mang đến trải nghiệm mua sắm an tâm và thuận
+                    tiện nhất.</p>
+            </div>
+
+            <div class="policy-content">
+                <div class="policy-text">
+                    <h2 class="policy-section-title">
+                        <i class="fas fa-exchange-alt"></i>
+                        Điều kiện đổi trả
+                    </h2>
+                    <p>Persona Jewellery chấp nhận đổi hoặc trả sản phẩm trong các trường hợp sau:</p>
+                    <ul class="policy-list">
+                        <li>Sản phẩm bị lỗi do nhà sản xuất</li>
+                        <li>Sản phẩm không đúng với mô tả trên website hoặc tại cửa hàng</li>
+                        <li>Sản phẩm không phù hợp kích thước (đối với vòng tay)</li>
+                        <li>Khách hàng không hài lòng với sản phẩm trong vòng 7 ngày kể từ ngày nhận hàng</li>
+                    </ul>
+
+                    <div class="policy-note">
+                        <p><strong>Lưu ý:</strong> Để được đổi trả, sản phẩm phải còn nguyên vẹn, không bị trầy xước,
+                            biến dạng và còn đầy đủ tem, nhãn, hộp đựng như ban đầu. Vui lòng giữ hóa đơn mua hàng hoặc
+                            phiếu giao hàng để thuận tiện cho quá trình đổi trả.</p>
+                    </div>
+                </div>
+
+                <div class="policy-text">
+                    <h2 class="policy-section-title">
+                        <i class="fas fa-calendar-alt"></i>
+                        Thời hạn đổi trả
+                    </h2>
+                    <table class="policy-table">
+                        <tr>
+                            <th>Loại đổi trả</th>
+                            <th>Thời hạn</th>
+                            <th>Điều kiện</th>
+                        </tr>
+                        <tr>
+                            <td>Lỗi từ nhà sản xuất</td>
+                            <td>30 ngày</td>
+                            <td>Sản phẩm phải còn nguyên vẹn, không có dấu hiệu sử dụng</td>
+                        </tr>
+                        <tr>
+                            <td>Không đúng mô tả</td>
+                            <td>14 ngày</td>
+                            <td>Phải có bằng chứng về sự khác biệt giữa sản phẩm thực tế và mô tả</td>
+                        </tr>
+                        <tr>
+                            <td>Không vừa kích thước</td>
+                            <td>14 ngày</td>
+                            <td>Chỉ áp dụng đổi size, không hoàn tiền</td>
+                        </tr>
+                        <tr>
+                            <td>Không hài lòng</td>
+                            <td>7 ngày</td>
+                            <td>Sản phẩm phải còn mới 100%, không có dấu hiệu đã sử dụng</td>
+                        </tr>
+                    </table>
+                    <p>Thời hạn đổi trả được tính từ ngày khách hàng nhận được sản phẩm (có xác nhận của đơn vị vận
+                        chuyển).</p>
+                </div>
+
+                <div class="policy-text">
+                    <h2 class="policy-section-title">
+                        <i class="fas fa-clipboard-list"></i>
+                        Quy trình đổi trả
+                    </h2>
+                    <div class="policy-steps">
+                        <div class="policy-step">
+                            <h3>Liên hệ với Persona Jewellery</h3>
+                            <p>Thông báo yêu cầu đổi trả qua hotline <strong>039 2477 865</strong> hoặc email
+                                <strong>personnajewellery@gmail.com</strong>, cung cấp thông tin về đơn hàng và lý do
+                                đổi trả.</p>
+                        </div>
+                        <div class="policy-step">
+                            <h3>Nhận xác nhận đổi trả</h3>
+                            <p>Sau khi nhận được yêu cầu, chúng tôi sẽ kiểm tra và gửi xác nhận đồng ý đổi trả qua email
+                                hoặc tin nhắn trong vòng 24 giờ.</p>
+                        </div>
+                        <div class="policy-step">
+                            <h3>Gửi sản phẩm về Persona Jewellery</h3>
+                            <p>Đóng gói sản phẩm cẩn thận và gửi về địa chỉ: <strong>233 Phan Trung, P.Tân Mai, Biên Hòa
+                                    – Đồng Nai</strong>, kèm theo hóa đơn mua hàng và phiếu đổi trả được cung cấp qua
+                                email.</p>
+                        </div>
+                        <div class="policy-step">
+                            <h3>Kiểm tra sản phẩm</h3>
+                            <p>Sau khi nhận được sản phẩm trả lại, chúng tôi sẽ kiểm tra và xác nhận tình trạng sản phẩm
+                                trong vòng 3 ngày làm việc.</p>
+                        </div>
+                        <div class="policy-step">
+                            <h3>Nhận sản phẩm thay thế hoặc hoàn tiền</h3>
+                            <p>Tùy theo yêu cầu của khách hàng, chúng tôi sẽ gửi sản phẩm thay thế hoặc hoàn tiền trong
+                                vòng 7-10 ngày làm việc kể từ ngày xác nhận sản phẩm đạt điều kiện đổi trả.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="policy-text">
+                    <h2 class="policy-section-title">
+                        <i class="fas fa-money-bill-wave"></i>
+                        Phương thức hoàn tiền
+                    </h2>
+                    <p>Khi khách hàng yêu cầu trả hàng và hoàn tiền, Persona Jewellery sẽ hoàn tiền theo phương thức
+                        khách hàng đã thanh toán ban đầu:</p>
+                    <ul class="policy-list">
+                        <li>Thanh toán qua thẻ tín dụng/ghi nợ: Hoàn tiền vào thẻ trong vòng 7-14 ngày làm việc</li>
+                        <li>Thanh toán qua ví điện tử (MoMo, ZaloPay): Hoàn tiền vào ví trong vòng 3-5 ngày làm việc
+                        </li>
+                        <li>Thanh toán bằng chuyển khoản ngân hàng: Hoàn tiền vào tài khoản chỉ định trong vòng 3-5 ngày
+                            làm việc</li>
+                        <li>Thanh toán khi nhận hàng (COD): Hoàn tiền qua chuyển khoản ngân hàng hoặc tiền mặt tại cửa
+                            hàng</li>
+                    </ul>
+                </div>
+
+                <div class="policy-text">
+                    <h2 class="policy-section-title">
+                        <i class="fas fa-exclamation-circle"></i>
+                        Các trường hợp không áp dụng đổi trả
+                    </h2>
+                    <ul class="policy-list">
+                        <li>Sản phẩm đã qua sử dụng, có dấu hiệu hư hỏng, trầy xước do lỗi của người sử dụng</li>
+                        <li>Sản phẩm không còn đầy đủ tem, nhãn, hộp đựng như ban đầu</li>
+                        <li>Charm đã được gắn vào vòng tay theo yêu cầu cá nhân hóa của khách hàng</li>
+                        <li>Đã quá thời hạn đổi trả theo quy định</li>
+                        <li>Khách hàng không cung cấp được hóa đơn mua hàng hoặc bằng chứng mua hàng tại Persona
+                            Jewellery</li>
+                    </ul>
+                </div>
+
+                <div class="policy-contact">
+                    <h3>Cần hỗ trợ về đổi trả?</h3>
+                    <p>Nếu bạn có bất kỳ thắc mắc nào về chính sách đổi trả, vui lòng liên hệ với đội ngũ chăm sóc khách
+                        hàng của chúng tôi để được hỗ trợ tận tình.</p>
+                    <a href="index.html#contact" class="contact-button">Liên hệ ngay</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <a href="#" class="footer-logo">Persona Jewellery</a>
+            <p class="footer-about" style="margin-bottom: 24px; font-size: 18px;">
+                Chúng tôi là nhà cung cấp vòng tay Italian Charm hàng đầu Việt Nam với sứ mệnh mang đến những
+                sản phẩm chất lượng cao, thiết kế độc đáo và dịch vụ tận tâm.
+            </p>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h4 class="footer-title">LIÊN HỆ</h4>
+                    <ul class="footer-contact-list">
+                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <i class="fas fa-map-marker-alt" style="margin-right: 8px; color: #DDCB78;"></i>
+                            233 Phan Trung, P.Tân Mai, Biên Hòa – Đồng Nai
+                        </li>
+                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <i class="fas fa-phone-alt" style="margin-right: 4px; color: #DDCB78;"></i>
+                            039 2477 865
+                        </li>
+                        <li style="display: flex; align-items: center; margin-bottom: 8px;">
+                            <i class="fas fa-envelope" style="margin-right: 4px; color: #DDCB78;"></i>
+                            personnajewellery@gmail.com
+                        </li>
+                    </ul>
+                    <div class="footer-social" style="display: flex; gap: 12px;">
+                        <a href="https://www.facebook.com/people/Persona-Jewellery/61565917419919/" target="_blank"
+                            class="social-icon" style="background: #3b5998;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/persona.jewelleryy/" target="_blank" class="social-icon"
+                            style="background: #e4405f;"><i class="fab fa-instagram"></i></a>
+                        <a href="https://personajewellery.godaddysites.com/trang-ch%E1%BB%A7" target="_blank"
+                            class="social-icon" style="background: #DDCB78;"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">LIÊN KẾT NHANH</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Trang chủ</a></li>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#products">Sản phẩm</a></li>
+                        <li><a href="#features">Tính năng</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">HỖ TRỢ</h4>
+                    <ul class="footer-links">
+                        <li><a href="chinh-sach-bao-hanh.html" target="_blank">Chính sách bảo hành</a></li>
+                        <li><a href="chinh-sach-doi-tra.html" target="_blank">Chính sách đổi trả</a></li>
+                        <li><a href="chinh-sach-van-chuyen.html" target="_blank">Chính sách vận chuyển</a></li>
+                        <li><a href="huong-dan-mua-hang.html" target="_blank">Hướng dẫn mua hàng</a></li>
+                        <li><a href="cau-hoi-thuong-gap.html" target="_blank">Câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">ĐĂNG KÝ NHẬN TIN</h4>
+                    <p class="footer-newsletter">
+                        Đăng ký để nhận thông tin mới nhất về sản phẩm và khuyến mãi đặc biệt.
+                    </p>
+                    <div class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Email của bạn">
+                        <button type="submit" class="newsletter-btn">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2023 Persona Jewellery. All Rights Reserved.
+                </p>
+                <div class="payment-methods">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1200px-Visa_Inc._logo.svg.png"
+                        alt="Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1200px-Mastercard-logo.svg.png"
+                        alt="Mastercard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/1200px-PayPal.svg.png"
+                        alt="PayPal">
+                    <img src="https://cdn.haitrieu.com/wp-content/uploads/2022/10/Logo-MoMo-Square.png" alt="MoMo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./JS/ui.js"></script>
+    <script src="./JS/common.js"></script>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollToTopBtn" title="Lên đầu trang"
+        style="display: none; align-items: center; justify-content: center">
+        <i class="fas fa-chevron-up" style="font-size: 16px;"></i>
+    </button>
+
+    <!-- Scroll To Top Script -->
+    <script>
+        // Hiển thị nút khi cuộn xuống 100px từ đầu trang
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("scrollToTopBtn").style.display = "flex";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+
+        // Khi nhấp vào nút, cuộn lên đầu trang với hiệu ứng mượt
+        document.getElementById("scrollToTopBtn").addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+
+    <style>
+        #scrollToTopBtn {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: #916841;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            width: 50px;
+            height: 50px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #7a5836;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 768px) {
+            #scrollToTopBtn {
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</body>
+
+</html>
