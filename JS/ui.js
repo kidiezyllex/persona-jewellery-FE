@@ -1,35 +1,24 @@
-/**
- * UI JavaScript
- * Xử lý các tính năng chung của giao diện người dùng
- */
-
 document.addEventListener('DOMContentLoaded', function() {
-    // Khởi tạo mobile menu
     initMobileMenu();
     
-    // Khởi tạo scroll header
     initScrollHeader();
     
-    // Khởi tạo form validation
     initFormValidation();
     
-    // Khởi tạo AOS (Animate on Scroll)
     initAOS();
 
-    // Cập nhật số lượng sản phẩm giỏ hàng lên badge
     updateCartBadge();
 });
 
-/**
- * Khởi tạo mobile menu
- */
 function initMobileMenu() {
     const mobileToggle = document.querySelector('.mobile-toggle');
     const navMenu = document.querySelector('.nav-menu');
 
     if (mobileToggle && navMenu) {
-        mobileToggle.addEventListener('click', () => {
+        mobileToggle.addEventListener('click', function () {
             navMenu.classList.toggle('active');
+            mobileToggle.querySelector('i').classList.toggle('fa-bars');
+            mobileToggle.querySelector('i').classList.toggle('fa-times');
         });
         
         // Đóng menu khi click ra ngoài
@@ -49,9 +38,6 @@ function initMobileMenu() {
     }
 }
 
-/**
- * Khởi tạo scroll header
- */
 function initScrollHeader() {
     const header = document.querySelector('.header');
     
@@ -72,9 +58,6 @@ function initScrollHeader() {
     }
 }
 
-/**
- * Khởi tạo form validation
- */
 function initFormValidation() {
     const contactForm = document.getElementById('contact-form');
     
@@ -155,9 +138,6 @@ function initFormValidation() {
     }
 }
 
-/**
- * Khởi tạo Animate on Scroll
- */
 function initAOS() {
     if (typeof AOS !== 'undefined') {
         AOS.init({
@@ -178,4 +158,74 @@ function updateCartBadge() {
         cart = [];
     }
     cartCountEl.textContent = cart.length;
+}
+
+const quantityInput = document.querySelector('.quantity-selector__input');
+const decreaseBtn = document.querySelector('.quantity-selector__button:first-child');
+const increaseBtn = document.querySelector('.quantity-selector__button:last-child');
+const priceElement = document.querySelector('.price-list .text-on-sale');
+const originalPriceElement = document.querySelector('.price-list .text-subdued');
+
+if (quantityInput && decreaseBtn && increaseBtn && priceElement && originalPriceElement) {
+    // Giá ban đầu
+    const basePrice = 90000;
+    const originalBasePrice = 299000;
+
+    // Cập nhật giá dựa trên số lượng
+    function updatePrice() {
+        const quantity = parseInt(quantityInput.value) || 1;
+        const newPrice = basePrice * quantity;
+        const newOriginalPrice = originalBasePrice * quantity;
+        
+        // Cập nhật giá hiển thị
+        priceElement.innerHTML = `<span class="sr-only">Giá khuyến mãi</span>${newPrice.toLocaleString('vi-VN')}₫`;
+        originalPriceElement.innerHTML = `<span class="sr-only">Giá gốc</span>${newOriginalPrice.toLocaleString('vi-VN')}₫`;
+    }
+
+    // Xử lý nút giảm số lượng
+    decreaseBtn.addEventListener('click', function() {
+        const currentValue = parseInt(quantityInput.value) || 1;
+        if (currentValue > 1) {
+            quantityInput.value = currentValue - 1;
+            updatePrice();
+            
+            // Bỏ trạng thái disabled nếu số lượng > 1
+            if (parseInt(quantityInput.value) === 1) {
+                decreaseBtn.disabled = true;
+            } else {
+                decreaseBtn.disabled = false;
+            }
+        }
+    });
+
+    // Xử lý nút tăng số lượng
+    increaseBtn.addEventListener('click', function() {
+        const currentValue = parseInt(quantityInput.value) || 1;
+        quantityInput.value = currentValue + 1;
+        updatePrice();
+        
+        // Bỏ trạng thái disabled khi số lượng > 1
+        if (parseInt(quantityInput.value) > 1) {
+            decreaseBtn.disabled = false;
+        }
+    });
+
+    // Xử lý khi thay đổi giá trị input trực tiếp
+    quantityInput.addEventListener('change', function() {
+        const currentValue = parseInt(this.value) || 1;
+        
+        // Đảm bảo giá trị không nhỏ hơn 1
+        if (currentValue < 1) {
+            this.value = 1;
+        }
+        
+        // Cập nhật trạng thái nút giảm
+        if (parseInt(this.value) === 1) {
+            decreaseBtn.disabled = true;
+        } else {
+            decreaseBtn.disabled = false;
+        }
+        
+        updatePrice();
+    });
 } 
