@@ -32,7 +32,6 @@ html {
     overflow-x: hidden;
 }
 
-
 /* =============================================================1. Custom Scrollbar */
 
 body::-webkit-scrollbar {
@@ -103,7 +102,7 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
 }
 
-.chatbox .chatbox-header .icon-wrapper{
+.chatbox .chatbox-header .icon-wrapper {
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -119,14 +118,14 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
 }
 
-.chatbox .chatbox-footer{
+.chatbox .chatbox-footer {
     display: flex;
     background-color: #fff;
     padding: 1.5rem;
     gap: 1rem;
 }
 
-.chatbox .chatbox-footer .input{
+.chatbox .chatbox-footer .input {
     width: 90%;
     background-color: #eee;
     padding: 1rem;
@@ -136,28 +135,28 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-.chatbox .chatbox-footer .input ion-icon{
+.chatbox .chatbox-footer .input ion-icon {
     font-size: 2.4rem;
     color: var(--blue);
 }
 
-.chatbox .chatbox-footer .input input{
-    background-color:transparent;
+.chatbox .chatbox-footer .input input {
+    background-color: transparent;
     font-size: 1.4rem;
 }
 
-.chatbox .chatbox-footer .send{
+.chatbox .chatbox-footer .send {
     width: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.chatbox .chatbox-footer .send ion-icon{
-    font-size:2.4rem ;
+.chatbox .chatbox-footer .send ion-icon {
+    font-size: 2.4rem;
 }
 
-.chatbox .chatbox-middle{
+.chatbox .chatbox-middle {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -168,28 +167,28 @@ body::-webkit-scrollbar-thumb {
     overflow-y: scroll;
 }
 
-.chatbox .chatbox-middle .text-box{
+.chatbox .chatbox-middle .text-box {
     max-width: 100%;
     border-radius: 0.5rem;
-    background-color:#eee;
+    background-color: #eee;
     padding: 1.5rem;
     position: relative;
 }
 
-.chatbox .chatbox-middle .text-box p{
+.chatbox .chatbox-middle .text-box p {
     font-size: 1.6rem;
     margin-bottom: 1rem;
-    
+
 }
 
-.chatbox .chatbox-middle .time{
+.chatbox .chatbox-middle .time {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.chatbox .chatbox-middle .time ion-icon{
+.chatbox .chatbox-middle .time ion-icon {
     font-size: 1.6rem;
 }
 
@@ -264,7 +263,7 @@ body::-webkit-scrollbar-thumb {
 
 /* ============================Bắt đầu phần Form Log-in */
 .login-form,
-.signup-form{
+.signup-form {
     width: 40rem;
     background: #fff;
     border-radius: 0.5rem;
@@ -274,7 +273,7 @@ body::-webkit-scrollbar-thumb {
 
 .login-form h1,
 .signup-form h1,
-.verify h1{
+.verify h1 {
     margin: 0;
     padding-bottom: 2rem;
     font-size: 2.5rem;
@@ -283,14 +282,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .login-form form,
-.signup-form form{
+.signup-form form {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
 .login-form .input-box,
-.signup-form .input-box{
+.signup-form .input-box {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -300,33 +299,33 @@ body::-webkit-scrollbar-thumb {
 
 
 .login-form .input-box span,
-.signup-form .input-box span{
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: var(--blue);
+.signup-form .input-box span {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--blue);
 }
 
 .login-form .input-box .input,
-.signup-form .input-box .input{
+.signup-form .input-box .input {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
 .login-form .input-box .input ion-icon,
-.signup-form .input-box .input ion-icon{
-   font-size: 1.8rem;
-   color: var(--grey);
+.signup-form .input-box .input ion-icon {
+    font-size: 1.8rem;
+    color: var(--grey);
 }
 
 .login-form .input-box .input input,
-.signup-form .input-box .input input{
+.signup-form .input-box .input input {
     flex: 1;
     padding: 0.5rem;
     font-size: 1.6rem;
 }
 
-.login-form .input-box .alert{
+.login-form .input-box .alert {
     padding: 0.7rem;
     border-radius: 0.5rem;
     display: flex;
@@ -336,7 +335,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #FCEDE9;
 }
 
-.login-form .input-box .alert .icon{
+.login-form .input-box .alert .icon {
     height: 3.5rem;
     width: 3.5rem;
     background-color: #EA4E2C;
@@ -345,7 +344,8 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     border-radius: 0.5rem;
 }
-.login-form .input-box .alert ion-icon{
+
+.login-form .input-box .alert ion-icon {
     font-size: 2.5rem;
     color: #fff;
 }
@@ -353,7 +353,7 @@ body::-webkit-scrollbar-thumb {
 
 .login-form .login-button,
 .signup-form .signup-button,
-.verify .confirm-button{
+.verify .confirm-button {
     padding: 1.5rem;
     background-image: linear-gradient(90deg, #1E272D, #313866);
     border-radius: 5rem;
@@ -367,17 +367,18 @@ body::-webkit-scrollbar-thumb {
 .login-form .login-button:hover,
 .login-form ul li:hover,
 .signup-form .signup-button:hover,
-.verify .confirm-button:hover{
+.verify .confirm-button:hover {
     transform: scale(0.9);
 }
-.login-form h2{
+
+.login-form h2 {
     text-align: center;
     font-size: 1.6rem;
     color: var(--grey);
     font-weight: 400;
 }
 
-.login-form ul{
+.login-form ul {
     list-style: none;
     display: flex;
     align-items: center;
@@ -387,7 +388,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .login-form ul li,
-.login-form ul li a{
+.login-form ul li a {
     width: 5rem;
     height: 5rem;
     color: #fff;
@@ -399,22 +400,19 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
-.login-form ul li:nth-child(1)
-{
-    background-color:#425893;
+.login-form ul li:nth-child(1) {
+    background-color: #425893;
 }
 
-.login-form ul li:nth-child(2)
-{
-    background-color:#4CA7EB;
+.login-form ul li:nth-child(2) {
+    background-color: #4CA7EB;
 }
 
-.login-form ul li:nth-child(3)
-{
-    background-color:#DD5446;
+.login-form ul li:nth-child(3) {
+    background-color: #DD5446;
 }
-.login-form h2 a
-{
+
+.login-form h2 a {
     width: 100%;
     display: inline-block;
     color: var(--grey);
@@ -423,13 +421,13 @@ body::-webkit-scrollbar-thumb {
     text-align: right;
 }
 
-.signup-form .checkbox{
+.signup-form .checkbox {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.signup-form .checkbox span{
+.signup-form .checkbox span {
     text-align: center;
     font-size: 1.4rem;
     color: var(--grey);
@@ -443,25 +441,26 @@ body::-webkit-scrollbar-thumb {
     animation: fadeIn 0.4s cubic-bezier(.54, 1.3, .63, 1.34) .2s backwards;
 }
 
-.verify .image{
+.verify .image {
     overflow: hidden;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 }
-.verify .image img{
+
+.verify .image img {
     width: 100%;
     object-fit: cover;
 }
 
-.verify .content{
+.verify .content {
     display: flex;
     flex-direction: column;
     padding: 2rem 5rem;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
 
-.verify .content p{
+.verify .content p {
     font-size: 1.4rem;
     font-weight: 500;
     text-align: center;
@@ -469,7 +468,7 @@ body::-webkit-scrollbar-thumb {
     color: var(--grey);
 }
 
-.verify .content .confirm-button{
+.verify .content .confirm-button {
     width: 100%;
     text-align: center;
 }
@@ -521,7 +520,7 @@ body::-webkit-scrollbar-thumb {
     transform: rotate(15deg) scale(1.2);
 }
 
-.sidebar-rights{
+.sidebar-rights {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -530,6 +529,7 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(-50%);
     z-index: 2;
 }
+
 .sidebar-lefts {
     bottom: 3rem;
     left: 3rem;
@@ -549,8 +549,8 @@ body::-webkit-scrollbar-thumb {
 
 /* =============================================================8. Loading */
 
-.modal-loading{
-    position:fixed;
+.modal-loading {
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
@@ -561,80 +561,109 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     z-index: 1000;
 }
+
 .sk-cube-grid {
     width: 6rem;
     height: 6rem;
-  }
-  
-  .sk-cube-grid .sk-cube {
+}
+
+.sk-cube-grid .sk-cube {
     width: 33%;
     height: 33%;
     background-color: var(--blue);
     float: left;
     -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-            animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
-  }
-  .sk-cube-grid .sk-cube1 {
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+
+.sk-cube-grid .sk-cube1 {
     -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s; }
-  .sk-cube-grid .sk-cube2 {
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube2 {
     -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s; }
-  .sk-cube-grid .sk-cube3 {
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube3 {
     -webkit-animation-delay: 0.4s;
-            animation-delay: 0.4s; }
-  .sk-cube-grid .sk-cube4 {
+    animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube4 {
     -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s; }
-  .sk-cube-grid .sk-cube5 {
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube5 {
     -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s; }
-  .sk-cube-grid .sk-cube6 {
+    animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube6 {
     -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s; }
-  .sk-cube-grid .sk-cube7 {
+    animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube7 {
     -webkit-animation-delay: 0s;
-            animation-delay: 0s; }
-  .sk-cube-grid .sk-cube8 {
+    animation-delay: 0s;
+}
+
+.sk-cube-grid .sk-cube8 {
     -webkit-animation-delay: 0.1s;
-            animation-delay: 0.1s; }
-  .sk-cube-grid .sk-cube9 {
+    animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube9 {
     -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s; }
-  
-  @-webkit-keyframes sk-cubeGridScaleDelay {
-    0%, 70%, 100% {
-      -webkit-transform: scale3D(1, 1, 1);
-              transform: scale3D(1, 1, 1);
-    } 35% {
-      -webkit-transform: scale3D(0, 0, 1);
-              transform: scale3D(0, 0, 1); 
+    animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
     }
-  }
-  
-  @keyframes sk-cubeGridScaleDelay {
-    0%, 70%, 100% {
-      -webkit-transform: scale3D(1, 1, 1);
-              transform: scale3D(1, 1, 1);
-    } 35% {
-      -webkit-transform: scale3D(0, 0, 1);
-              transform: scale3D(0, 0, 1);
-    } 
-  }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
 
 /* ============================================================= Responsive cho Header và Footer */
 @media screen and (max-width: 1200px) {
-    html{
+    html {
         font-size: 57%;
     }
 
 }
 
 @media screen and (max-width: 992px) {
-    html{
+    html {
         font-size: 50%;
     }
-    
+
 }
 
 @media screen and (max-width: 768px) {
@@ -644,33 +673,36 @@ body::-webkit-scrollbar-thumb {
         color: #fff;
         text-align: center;
     }
+
     .brands-menu {
         position: static;
     }
+
     .fa-times {
         transform: rotate(-180deg);
     }
 
-    
+
 }
 
 .pulsate-fwd {
-	-webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
-	        animation: pulsate-fwd 0.5s ease-in-out infinite both;
+    -webkit-animation: pulsate-fwd 0.5s ease-in-out infinite both;
+    animation: pulsate-fwd 0.5s ease-in-out infinite both;
 }
 
 @keyframes pulsate-fwd {
     0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
+
     50% {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
+
     100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
     }
-  }
-  
+}

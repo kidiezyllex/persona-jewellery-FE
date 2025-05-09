@@ -100,7 +100,8 @@
 .product-image-wrapper {
     position: relative;
     width: 100%;
-    padding-top: 100%; /* 1:1 Aspect Ratio */
+    padding-top: 100%;
+    /* 1:1 Aspect Ratio */
     overflow: hidden;
     border-radius: 6px;
     margin-bottom: 15px;
@@ -250,7 +251,7 @@
     background-color: #070322;
     color: #fff;
     border: none;
-    border-radius: 4px ;
+    border-radius: 4px;
     padding: 12px 20px;
     font-size: 0.9rem;
     font-weight: 500;
@@ -548,7 +549,6 @@
     color: #070322;
 }
 
-/* Phần CSS cho Tính năng nổi bật trong popup */
 .popup-features {
     margin-bottom: 25px;
     border-top: 1px solid #eee;
@@ -633,16 +633,16 @@
         width: 240px;
         min-width: 240px;
     }
-    
+
     .popup-body {
         flex-direction: column;
     }
-    
+
     .popup-product-images {
         padding-right: 0;
         margin-bottom: 30px;
     }
-    
+
     .popup-main-image {
         height: 300px;
     }
@@ -655,29 +655,29 @@
         max-width: 320px;
         margin: 0 auto;
     }
-    
+
     .section-header {
         flex-direction: column;
         gap: 15px;
     }
-    
+
     .popup-content {
         width: 95%;
     }
-    
+
     .popup-body {
         padding: 20px;
     }
-    
+
     .popup-main-image {
         height: 250px;
     }
-    
+
     .popup-product-title {
         font-size: 1.5rem;
     }
-    
+
     .popup-current-price {
         font-size: 1.3rem;
     }
-} 
+}

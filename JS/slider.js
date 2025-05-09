@@ -1,16 +1,7 @@
-/**
- * Slider/Slideshow JavaScript
- * Xử lý tất cả chức năng liên quan đến slideshow trên trang chủ
- */
-
 document.addEventListener('DOMContentLoaded', function() {
     // Khởi tạo slideshow
     initSlideshow();
 });
-
-/**
- * Khởi tạo slideshow
- */
 function initSlideshow() {
     const slides = document.querySelectorAll('.slideshow-slide');
     const dots = document.querySelectorAll('.dot');
